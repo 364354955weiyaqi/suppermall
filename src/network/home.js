@@ -1,11 +1,8 @@
-import {request} from 'request'
+import {request} from './request'
 
 export function getHomeMutiData() {
   return request({
-      url: '',
-      // params: {
-      //
-      // }
+      url: '/home/multidata',
     }
   )
 }

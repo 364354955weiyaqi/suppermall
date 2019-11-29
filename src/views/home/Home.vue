@@ -14,16 +14,15 @@
     },
     data() {
       return {
-        binner: [],
+        binners: [],
         recommonds: []
       }
     },
     created() {
       //请求多个数据
       getHomeMutiData().then(res => {
-        this.binner = res.binner.list
-      }).catch(err => {
-        return err
+        this.binners = res.data.banner.list
+        this.recommonds = res.data.recommend.list
       })
     }
   }
