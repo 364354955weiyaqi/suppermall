@@ -18,7 +18,7 @@
     },
     computed: {
       isActive() {
-        return this.$route.path.indexOf(this.link) != -1
+        return this.$route.path.indexOf(this.link) !== -1
       },
       activeStyle() {
         return this.isActive? {color:this.activeColor}:{}
@@ -39,7 +39,7 @@
     text-align: center;
     height: 49px;
   }
-  .tab-bar-item image{
+  .tab-bar-item img{
     width: 24px;
     height: 24px;
     margin-top: 3px;
